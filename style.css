@@ -1,0 +1,159 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url(Norse-Bold.otf);
+}
+
+body {
+  background: #222222;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#sign_up {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0%);
+}
+
+#left {
+  background-image: url("img.jpg");
+  height: 100vh;
+  width: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#logo_area {
+  background: rgba(0,0,0,.45);
+  position: absolute;
+  width: 100%;
+  height: 140px;
+  top: 22%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: Norse-Bold;
+  font-size: 90px;
+  align-items: center;
+  color: white;
+}
+
+#logo {
+  height: 85%;
+  align-self: center;
+}
+
+#form {
+  width: 845px;
+  display: flex;
+  flex-direction: column;
+  background: #F9FAFB;
+  justify-content: center;
+}
+
+#top {
+  margin-top: -2.5rem;
+  margin-bottom: .5rem;
+  font-size: 22px;
+  padding: 2.75rem;
+  padding-right: 8rem;
+  font-weight: 600;
+}
+
+#middle {
+  background: white;
+  font-size: 22px;
+  box-shadow: 0px 3px 5px rgba(0,0,0,.25);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2.75rem;
+  padding-right: 15.5rem;
+  gap: 1.5rem;
+}
+
+form > div {
+  display: flex;
+  gap: 4.5rem;
+}
+
+form > div > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#form_heading {
+  font-weight: bold;
+}
+
+label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+input {
+  border-radius: 4px;
+  border: 1px solid #E5E7EB;
+  width: 225px;
+  font-size: 15px;
+  padding: .3rem .5rem;
+}
+
+#bottom {
+  padding: 2rem 2.75rem;
+  margin-top: .25rem;
+}
+
+#bottom > div > a {
+  text-decoration: none;
+  color: #596D48;
+  font-weight: bold;
+}
+
+button {
+  padding: 1rem 3.25rem;
+  font-size: 16px;
+  margin-bottom: 2rem;
+  background: #596D48;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0px 2px 3px rgba(0,0,0,.25);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#password_error {
+  font-size: 11px;
+  color: red;
+}
+
+#photo_credit {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  left: 50%;
+  bottom: 1%;
+  transform: translate(-50%, 0%);
+}
+
+#photo_credit > a {
+  color: white;
+}
+
+.error {
+  border: none;
+  outline: 1px solid red;
+}
+
+input:focus {
+  outline: 1px solid blue;
+  box-shadow: 0px 2px 3px rgba(0,0,0,.25);
+}
